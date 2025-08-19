@@ -20,9 +20,7 @@ class UserStructureTest {
 
 	@Test
 	void polimorfismoBasico() {
-		// Este teste só compila se você criar cms.user.User e ajustar AdminUser para
-		// extends User
-		// Ajuste depois de criar a superclasse
+
 		AdminUser a = new AdminUser(1, "Ana", "ana@x", "123");
 		assertEquals("Ana", a.getName());
 		assertTrue(a.checkPassword("123"));

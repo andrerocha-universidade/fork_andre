@@ -13,7 +13,7 @@ public abstract class User {
         this.password = password;
     }
 
-    // Getters obrigatórios
+    
     public int getId() {
         return id;
     }
@@ -26,7 +26,7 @@ public abstract class User {
         return email;
     }
 
-    // O teste geralmente exige um método de verificação de senha
+
     public boolean checkPassword(String password) {
         return this.password != null && this.password.equals(password);
     }
